@@ -1,7 +1,11 @@
-#!/bin/bash -v
-#Name: Walace Nascimento
-#Data: 31/03/2022
-#Function: Algoritmo que converte imagens jpg para png de diversos diretórios
+#!/bin/bash 
+
+#------------------------------------------------------------#
+# Script Name: conversao-diferentes-diretorios.sh
+# Description: converte arquivos no formato jpg em diversos diretórios
+# Linkedin:https://www.linkedin.com/in/walace-nascimento/
+# Writen by: Walace Nascimento
+#------------------------------------------------------------#
 
 converte_imagem(){
 local caminho_imagem=$1
