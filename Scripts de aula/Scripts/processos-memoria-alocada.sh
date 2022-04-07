@@ -1,9 +1,21 @@
 #!/bin/bash
 
+#------------------------------------------------------------#
+# Script Name: processos-memoria-alocada.sh
+# Description: identica o processo e a quantidade de memória alocada 
+# Linkedin:https://www.linkedin.com/in/walace-nascimento/
+# Writen by: Walace Nascimento
+#------------------------------------------------------------#
+
+#Primeiro, é necessário verficar se existi um repostório 
+
 if [ ! -d log ]
 then
 	mkdir log
 fi
+
+#Criar uma função para encontrar o processo, a data e a memória do processo
+
 processos_memoria(){
 processos=$( ps -e -o pid --sort -size | head -n 11 | grep [0-9])
 for pid in $processos
@@ -15,6 +27,9 @@ do
 done
 }
 processos_memoria
+
+# Utilizando um status de saída
+
 if [ $? -eq 0 ]
 then
 	echo "Os arquivos foram salvos com sucesso"

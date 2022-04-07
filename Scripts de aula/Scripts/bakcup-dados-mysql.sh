@@ -1,4 +1,10 @@
 #!/bin/bash
+#------------------------------------------------------------#
+# Script Name: backuo-dados-mysql.sh
+# Description: realiza o backup de arquivo mysql
+# Linkedin:https://www.linkedin.com/in/walace-nascimento/
+# Writen by: Walace Nascimento
+#------------------------------------------------------------#
 
 CAMINHO_HOME=/home/walace
 cd $CAMINHO_HOME

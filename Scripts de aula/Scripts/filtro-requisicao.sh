@@ -1,4 +1,12 @@
 #!/bin/bash
+
+#------------------------------------------------------------#
+# Script Name: filtro-rquisicao.sh
+# Description: Filtra a saída de requisições do usuário
+# Linkedin:https://www.linkedin.com/in/walace-nascimento/
+# Writen by: Walace Nascimento
+#------------------------------------------------------------#
+
 cd ~/apache-log
 if [ -z $1 ]
 then

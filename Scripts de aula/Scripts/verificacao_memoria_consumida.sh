@@ -1,4 +1,12 @@
 #!/bash/bin
+#------------------------------------------------------------#
+# Script Name: verificação_memória_consumida.sh
+# Description: Relação entre memória total e consumida
+# Linkedin:https://www.linkedin.com/in/walace-nascimento/
+# Writen by: Walace Nascimento
+#------------------------------------------------------------#
+
+# Identifar a memória toral e a consumida do processo
 
 memoria_total=$(free | grep -i mem | awk '{print $2}')
 memoria_consumida=$(free | grep -i mem | awk '{print $3}')
